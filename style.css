@@ -1,0 +1,454 @@
+@font-face{
+    font-family: 'TAM';
+    src: url('TsukushiAMaruGothic.ttc') format('truetype');
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'TAM';
+    color:#f9f9f9
+}
+
+body{
+    width: 100%;
+    background-image: url(bodybg.png);
+}
+
+.main-visual{
+    width: 100%;
+    height: 236px;
+    background: #203534 url(rubik2.png) 0px 0 repeat;
+    background-size: cover;
+    margin-bottom: 32px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.main-visual h1{
+    position: absolute;
+    margin-left:-142px;
+    top: 50%;
+    left: 50%;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+#main{
+    width: 608px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #203534;
+    padding: 16px;
+    float:left;
+}
+
+#header{
+    width: 100%;
+    overflow: hidden;
+    background: #A68036;
+    padding: 6px 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+#header h1{
+    float: left;
+    margin-right: 40px;
+}
+
+nav{
+    overflow: hidden;
+    color: #fff;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
+}
+
+nav a{
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 14px 16px 0px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    text-shadow: 0px 2px 0px #444;
+    margin: 10px 16px 4px;
+}
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+#linkinpage ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 0;
+}
+
+#linkinpage li{
+    display: inline-block;
+    font-size: 15px;
+}
+
+#linkinpage a{
+    text-decoration: none;
+    color: #aaa;
+    width: 100px;
+    display: inline-block;
+    background: #203534;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 10px;
+    transition: 0.2s;
+    letter-spacing: 3px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#linkinpage a:active{
+    background: #666;
+    color: #203534;
+}
+
+p.new{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #A68036;
+    color: #203534;
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+#content1{
+    position: relative;
+}
+
+#content3{
+    position: relative;
+}
+
+.dissolve-animation{
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#content1 .dissolve-animation .caption{
+    position: absolute;
+    padding: 20px;
+    height: 160px;
+    width: 260px;
+    
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    
+    opacity: 0;
+}
+
+#content1 .dissolve-animation .caption h2{
+    color: #203534;
+    font-size: 13px;
+}
+
+#content1 .dissolve-animation .caption h3{
+    color: #203534;
+    font-size: 15px;
+}
+
+#content1 .dissolve-animation:hover .caption{
+    -webkit-transform: translate(8px, 8px);
+    -ms-transform: translate(8px, 8px);
+    -o-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+    
+    opacity: 1;
+}
+
+.flip-animation{
+    position: relative;
+    width: 300px;
+    float: left;
+    
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+    
+    -webkit-perspective-origin: left;
+    -moz-perspective-origin: left;
+    -ms-perspective-origin: left;
+    perspective-origin: left;
+}
+
+#content2 .flip-animation .caption{
+    position: absolute;
+    padding: 20px;
+    background: #A68036;
+    height: 159px;
+    width: 100px;
+    opacity: 0;
+    
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    
+    -webkit-transition: transform 0.4s, opacity 0.1s 0.3s;
+    -o-transition: transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#content2 .flip-animation:hover .caption{
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    
+    -webkit-transition: transform 0.4s, opacity 0.1s;
+    -o-transition: transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+#content2 .flip-animation img{
+    -webkit-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+}
+
+#content2 .flip-animation:hover img{
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+#content2 .flip-animation .caption h2{
+    color: white;
+    font-size: 13px;
+}
+
+#content2 .flip-animation .caption h3{
+    color: white;
+    font-size: 15px;
+}
+
+#content3 h3{
+    font-size: 11px;
+}
+
+img{
+    float: left;
+}
+
+.top-title{
+    font-size: 36px;
+    padding-left: 8px;
+    margin-bottom: 16px;
+    color: 555px;
+    font-weight: 400;
+    border-left: 6px solid #A68036;
+}
+
+h2{
+    color: #A68036;
+    margin-bottom: 16px;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+.right-box{
+    float: left;
+    width: 288px;
+    margin-left: 18px;
+}
+
+.left-box{
+    float: left;
+    width: 288px;
+    margin-left: 18px;
+}
+
+a.fbbutton{
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 32px;
+    background: #3b5998;
+    color: #203534;
+    border: 1px solid #3b5998;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a.fbbutton:hover{
+    background: #203534;
+    color: #3b5998;
+}
+
+a.ytbutton{
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 32px;
+    background: #f00;
+    color: #203534;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a.ytbutton:hover{
+    background: #203534;
+    color: #f00;
+}
+
+.content{
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    overflow: hidden;
+}
+
+.content:last-child{
+    border-bottom: 0;
+}
+
+#content5 p{
+    margin: -10px 0px 50px 300px;
+    padding: 10px;
+    border-left: 3px solid #eee;
+}
+
+#no1{
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+#content5 ol{
+    margin-left: 32px;
+}
+
+#sidebar{
+    float: left;
+    width: 280px;
+    margin: 0px 12px;
+    background: #203534;
+    padding: 8px;
+}
+
+#sidebar img{
+    margin-bottom: 16px;
+}
+
+#sidebar h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#sidebar p{
+    font-size: 16px;
+}
+
+#footer a{
+    font-size: 10px;
+    color: #aaa;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 5px 0px;
+    margin-top: 10px;
+    position: relative;
+    width: 120px;
+    display: block;
+    background: #203534;
+    text-align: center;
+    transition: 0.2s;
+    float: left;
+    overflow: hidden;
+}
+
+#footer a:active{
+    background-color: #666;
+    color: #203534;
+}
+
+.edge{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none repeat scroll 0 0 #aaa;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.edge1{
+    width: 1px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-delay: 0.2s;
+}
+
+.edge2{
+    height: 1px;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.edge3{
+    width: 1px;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition-delay: 0.2s;
+}
+
+.edge4{
+    height: 1px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+a:hover .edge{
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
