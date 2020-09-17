@@ -18,7 +18,7 @@ body{
 .main-visual{
     width: 100%;
     height: 236px;
-    background: #203534 url(rubik2.png) 0px 0 repeat;
+    background: #1b272d url(rubik2.png) 0px 0 repeat;
     background-size: cover;
     margin-bottom: 32px;
     padding-top: 60px;
@@ -37,7 +37,7 @@ body{
     width: 608px;
     margin: 0 auto;
     overflow: hidden;
-    background: #203534;
+    background: #1b272d;
     padding: 16px;
     float:left;
 }
@@ -45,7 +45,7 @@ body{
 #header{
     width: 100%;
     overflow: hidden;
-    background: #A68036;
+    background: #bfab7e;
     padding: 6px 0px;
     position: fixed;
     z-index: 2;
@@ -104,7 +104,7 @@ nav a:hover{
     color: #aaa;
     width: 100px;
     display: inline-block;
-    background: #203534;
+    background: #1b272d;
     text-align: center;
     padding: 5px 0px;
     font-size: 10px;
@@ -117,15 +117,15 @@ nav a:hover{
 
 #linkinpage a:active{
     background: #666;
-    color: #203534;
+    color: #1b272d;
 }
 
 p.new{
     width: 70px;
     height: 70px;
     border-radius: 50px;
-    background-color: #A68036;
-    color: #203534;
+    background-color: #bfab7e;
+    color: #1b272d;
     text-align: center;
     line-height: 65px;
     font-size: 25px;
@@ -162,12 +162,12 @@ p.new{
 }
 
 #content1 .dissolve-animation .caption h2{
-    color: #203534;
+    color: #1b272d;
     font-size: 13px;
 }
 
 #content1 .dissolve-animation .caption h3{
-    color: #203534;
+    color: #1b272d;
     font-size: 15px;
 }
 
@@ -199,7 +199,7 @@ p.new{
 #content2 .flip-animation .caption{
     position: absolute;
     padding: 20px;
-    background: #A68036;
+    background: #bfab7e;
     height: 159px;
     width: 100px;
     opacity: 0;
@@ -269,11 +269,11 @@ img{
     margin-bottom: 16px;
     color: 555px;
     font-weight: 400;
-    border-left: 6px solid #A68036;
+    border-left: 6px solid #bfab7e;
 }
 
 h2{
-    color: #A68036;
+    color: #bfab7e;
     margin-bottom: 16px;
 }
 
@@ -297,34 +297,34 @@ a.fbbutton{
     margin-top: 16px;
     font-size: 16px;
     padding: 8px 32px;
-    background: #3b5998;
-    color: #203534;
-    border: 1px solid #3b5998;
+    background: #bfab7e;
+    color: #1b272d;
+    border: 1px solid #bfab7e;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.5s;
 }
 
 a.fbbutton:hover{
-    background: #203534;
-    color: #3b5998;
+    background: #1b272d;
+    color: #bfab7e;
 }
 
 a.ytbutton{
     margin-top: 16px;
     font-size: 16px;
     padding: 8px 32px;
-    background: #f00;
-    color: #203534;
-    border: 1px solid #f00;
+    background: #bfab7e;
+    color: #1b272d;
+    border: 1px solid #bfab7e;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.5s;
 }
 
 a.ytbutton:hover{
-    background: #203534;
-    color: #f00;
+    background: #1b272d;
+    color: #bfab7e;
 }
 
 .content{
@@ -356,7 +356,7 @@ a.ytbutton:hover{
     float: left;
     width: 280px;
     margin: 0px 12px;
-    background: #203534;
+    background: #1b272d;
     padding: 8px;
 }
 
@@ -383,7 +383,7 @@ a.ytbutton:hover{
     position: relative;
     width: 120px;
     display: block;
-    background: #203534;
+    background: #1b272d;
     text-align: center;
     transition: 0.2s;
     float: left;
@@ -392,7 +392,7 @@ a.ytbutton:hover{
 
 #footer a:active{
     background-color: #666;
-    color: #203534;
+    color: #1b272d;
 }
 
 .edge{
