@@ -1,48 +1,52 @@
-@font-face{
-    font-family: 'TAM';
-    src: url('TsukushiAMaruGothic.ttc') format('truetype');
-}
-    
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'TAM';
-    color:#f9f9f9
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #f9f9f9
 }
 
-body{
+body {
     width: 100%;
-    background-image: url(bodybg.png);
+    background-image: url(img/bodybg.png);
 }
 
-.main-visual{
+.main-visual {
     width: 100%;
     height: 236px;
-    background: #1b272d url(rubik2.png) 0px 0 repeat;
+    background: #1b272d url(img/rubik.png) 0px 0 repeat;
     background-size: cover;
     margin-bottom: 32px;
     padding-top: 60px;
     position: relative;
 }
 
-.main-visual h1{
+.main-visual h1 {
     position: absolute;
-    margin-left:-142px;
+    margin-left: -142px;
     top: 50%;
     left: 50%;
-    text-shadow: 0px 0px 10px #fff;
+    text-shadow: 0px 0px 20px #fff;
 }
 
-#main{
+.top-letter {
+    transition: 0.8s;
+}
+
+.top-letter:hover {
+    text-shadow: none;
+    color: #666;
+}
+
+#main {
     width: 608px;
     margin: 0 auto;
     overflow: hidden;
     background: #1b272d;
     padding: 16px;
-    float:left;
+    float: left;
 }
 
-#header{
+#header {
     width: 100%;
     overflow: hidden;
     background: #bfab7e;
@@ -51,23 +55,23 @@ body{
     z-index: 2;
 }
 
-#header h1{
+#header h1 {
     float: left;
     margin-right: 40px;
 }
 
-nav{
+nav {
     overflow: hidden;
     color: #fff;
 }
 
-nav li{
+nav li {
     list-style-type: none;
     float: left;
     margin-top: 2px;
 }
 
-nav a{
+nav a {
     font-size: 16px;
     text-align: center;
     display: block;
@@ -76,143 +80,116 @@ nav a{
     transition: 0.3s;
 }
 
-nav a:hover{
-    text-shadow: 0px 2px 0px #444;
+nav a:hover {
+    text-shadow: 0px 2px 0px #8f805e;
     margin: 10px 16px 4px;
 }
 
-.wrapper{
+.wrapper {
     width: 960px;
     margin: 0 auto;
 }
 
-
-
-#linkinpage ul{
+#linkinpage ul {
     list-style-type: none;
     text-align: center;
     font-size: 0;
 }
 
-#linkinpage li{
+#linkinpage li {
     display: inline-block;
-    font-size: 15px;
 }
 
-#linkinpage a{
+#linkinpage a {
     text-decoration: none;
     color: #aaa;
     width: 100px;
     display: inline-block;
     background: #1b272d;
     text-align: center;
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 10px;
     transition: 0.2s;
     letter-spacing: 3px;
-    float: left;
     overflow: hidden;
     position: relative;
 }
 
-#linkinpage a:active{
-    background: #666;
+#linkinpage a:active {
     color: #1b272d;
 }
 
-p.new{
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    background-color: #bfab7e;
-    color: #1b272d;
-    text-align: center;
-    line-height: 65px;
-    font-size: 25px;
-    position: absolute;
-    right: 16px;
-    top: 16px;
-}
-
-#content1{
+#content1 {
     position: relative;
 }
 
-#content3{
+#content3 {
     position: relative;
 }
 
-.dissolve-animation{
+.dissolve-animation {
     position: relative;
     width: 300px;
     float: left;
 }
 
-#content1 .dissolve-animation .caption{
+#content1 .dissolve-animation .caption {
     position: absolute;
     padding: 20px;
     height: 160px;
     width: 260px;
-    
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    
     opacity: 0;
 }
 
-#content1 .dissolve-animation .caption h2{
+#content1 .dissolve-animation .caption h2 {
     color: #1b272d;
     font-size: 13px;
 }
 
-#content1 .dissolve-animation .caption h3{
+#content1 .dissolve-animation .caption h3 {
     color: #1b272d;
     font-size: 15px;
 }
 
-#content1 .dissolve-animation:hover .caption{
+#content1 .dissolve-animation:hover .caption {
     -webkit-transform: translate(8px, 8px);
     -ms-transform: translate(8px, 8px);
     -o-transform: translate(8px, 8px);
     transform: translate(8px, 8px);
-    
     opacity: 1;
 }
 
-.flip-animation{
+.flip-animation {
     position: relative;
     width: 300px;
     float: left;
-    
     -webkit-perspective: 500;
     -moz-perspective: 500;
     -ms-perspective: 500;
     perspective: 500;
-    
     -webkit-perspective-origin: left;
     -moz-perspective-origin: left;
     -ms-perspective-origin: left;
     perspective-origin: left;
 }
 
-#content2 .flip-animation .caption{
+#content2 .flip-animation .caption {
     position: absolute;
     padding: 20px;
     background: #bfab7e;
     height: 159px;
     width: 100px;
     opacity: 0;
-    
     -webkit-transform: rotateY(-90deg);
     -ms-transform: rotateY(-90deg);
     -o-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
-    
     -webkit-transition: transform 0.4s, opacity 0.1s 0.3s;
     -o-transition: transform 0.4s, opacity 0.1s 0.3s;
     transition: transform 0.4s, opacity 0.1s 0.3s;
-    
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
@@ -220,50 +197,49 @@ p.new{
     transform-origin: 0 0;
 }
 
-#content2 .flip-animation:hover .caption{
+#content2 .flip-animation:hover .caption {
     opacity: 1;
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
-    
     -webkit-transition: transform 0.4s, opacity 0.1s;
     -o-transition: transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s;
 }
 
-#content2 .flip-animation img{
+#content2 .flip-animation img {
     -webkit-transition: transform 0.4s;
     -o-transition: transform 0.4s;
     transition: transform 0.4s;
 }
 
-#content2 .flip-animation:hover img{
+#content2 .flip-animation:hover img {
     -webkit-transform: translateX(25%);
     -ms-transform: translateX(25%);
     -o-transform: translateX(25%);
     transform: translateX(25%);
 }
 
-#content2 .flip-animation .caption h2{
+#content2 .flip-animation .caption h2 {
     color: white;
     font-size: 13px;
 }
 
-#content2 .flip-animation .caption h3{
+#content2 .flip-animation .caption h3 {
     color: white;
     font-size: 15px;
 }
 
-#content3 h3{
+#content3 h3 {
     font-size: 11px;
 }
 
-img{
+img {
     float: left;
 }
 
-.top-title{
+.top-title {
     font-size: 36px;
     padding-left: 8px;
     margin-bottom: 16px;
@@ -272,29 +248,34 @@ img{
     border-left: 6px solid #bfab7e;
 }
 
-h2{
+h2 {
     color: #bfab7e;
     margin-bottom: 16px;
 }
 
-p{
+p {
     margin-bottom: 16px;
+    padding: 0px 18px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 22px;
 }
 
-.right-box{
+.right-box {
+    float: right;
+    width: 288px;
+    margin-left: 18px;
+}
+
+.left-box {
     float: left;
     width: 288px;
     margin-left: 18px;
 }
 
-.left-box{
-    float: left;
-    width: 288px;
-    margin-left: 18px;
-}
-
-a.fbbutton{
+a.button {
     margin-top: 16px;
+    margin-left: 18px;
     font-size: 16px;
     padding: 8px 32px;
     background: #bfab7e;
@@ -305,54 +286,44 @@ a.fbbutton{
     transition: 0.5s;
 }
 
-a.fbbutton:hover{
+a.button:hover {
     background: #1b272d;
     color: #bfab7e;
 }
 
-a.ytbutton{
-    margin-top: 16px;
-    font-size: 16px;
-    padding: 8px 32px;
-    background: #bfab7e;
-    color: #1b272d;
-    border: 1px solid #bfab7e;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-a.ytbutton:hover{
-    background: #1b272d;
-    color: #bfab7e;
-}
-
-.content{
-    border-bottom: 1px solid #eee;
-    padding: 16px 0;
+.content {
+    border-bottom: 1px solid #554;
+    padding: 32px 0;
     overflow: hidden;
 }
 
-.content:last-child{
-    border-bottom: 0;
+#content5 ol {
+    float: left;
 }
 
-#content5 p{
-    margin: -10px 0px 50px 300px;
-    padding: 10px;
-    border-left: 3px solid #eee;
+#content5 li {
+    counter-reset: padding-counter;
+    list-style-type: none;
+    background-color: #f9f9f9;
+    color: #1b272d;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-bottom: 6px;
+    padding-left: 60px;
+    width: 235px;
+    position: relative;
 }
 
-#no1{
-    font-size: 30px;
-    margin-left: 12px;
+.nom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #bfab7e;
+    height: 24px;
+    padding: 5px;
 }
 
-#content5 ol{
-    margin-left: 32px;
-}
-
-#sidebar{
+#sidebar {
     float: left;
     width: 280px;
     margin: 0px 12px;
@@ -360,20 +331,20 @@ a.ytbutton:hover{
     padding: 8px;
 }
 
-#sidebar img{
+#sidebar img {
     margin-bottom: 16px;
 }
 
-#sidebar h3{
+#sidebar h3 {
     font-size: 20px;
     margin-bottom: 8px;
 }
 
-#sidebar p{
+#sidebar p {
     font-size: 16px;
 }
 
-#footer a{
+#footer a {
     font-size: 10px;
     color: #aaa;
     text-decoration: none;
@@ -390,65 +361,31 @@ a.ytbutton:hover{
     overflow: hidden;
 }
 
-#footer a:active{
-    background-color: #666;
+#footer a:active {
     color: #1b272d;
 }
 
-.edge{
+.edge {
     display: block;
-    width: 100%;
-    height: 100%;
+    height: 1px;
+    width: 70%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 13%;
+    top: auto;
+    bottom: 0;
     background: none repeat scroll 0 0 #aaa;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    transform: scale(0, 1);
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-.edge1{
-    width: 1px;
-    -webkit-transform: translate3d(0, -100%, 0);
-    -ms-transform: translate3d(0, -100%, 0);
-    -o-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    transition-delay: 0.2s;
-}
-
-.edge2{
-    height: 1px;
-    -webkit-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-}
-
-.edge3{
-    width: 1px;
-    left: auto;
-    right: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    transition-delay: 0.2s;
-}
-
-.edge4{
-    height: 1px;
-    top: auto;
-    bottom: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-}
-
-a:hover .edge{
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+a:hover .edge {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
 }
