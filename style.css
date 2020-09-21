@@ -179,7 +179,6 @@ nav a:hover {
 #content2 .flip-animation .caption {
     position: absolute;
     padding: 20px;
-    background: #bfab7e;
     height: 159px;
     width: 100px;
     opacity: 0;
@@ -206,19 +205,6 @@ nav a:hover {
     -webkit-transition: transform 0.4s, opacity 0.1s;
     -o-transition: transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s;
-}
-
-#content2 .flip-animation img {
-    -webkit-transition: transform 0.4s;
-    -o-transition: transform 0.4s;
-    transition: transform 0.4s;
-}
-
-#content2 .flip-animation:hover img {
-    -webkit-transform: translateX(25%);
-    -ms-transform: translateX(25%);
-    -o-transform: translateX(25%);
-    transform: translateX(25%);
 }
 
 #content2 .flip-animation .caption h2 {
@@ -302,7 +288,6 @@ a.button:hover {
 }
 
 #content5 li {
-    counter-reset: padding-counter;
     list-style-type: none;
     background-color: #f9f9f9;
     color: #1b272d;
@@ -338,10 +323,6 @@ a.button:hover {
 #sidebar h3 {
     font-size: 20px;
     margin-bottom: 8px;
-}
-
-#sidebar p {
-    font-size: 16px;
 }
 
 #footer a {
